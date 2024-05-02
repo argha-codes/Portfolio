@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+</head>
+
+<body>
+  <nav id="home">
+    <div class="logo">Argha Mandal</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Navigation Menu -->
+
+  <nav id="hamburger-nav">
+    <div class="logo">Argha Mandal</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Page -->
+
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Argha Mandal profile picture" />
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Argha Mandal</h1>
+      <p class="section__text__p2">Computer Application Student</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="My LinkedIn Profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/argha247'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/argha-codes'" />
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Page -->
+
+  <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>HTML/CSS/JS - 6 months<br>Java & C Programming - 1 year</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Schooling (10+2)<br>BCA (Under Graduate)</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am Argha Mandal, I am from West Bengal, India. I completed my Madhyamik from Kendriya Vidyalaya and HS
+            from Krishnagar Public School. Now, I am a student of BCA(Bachelor of Computer Applications) 1st Year in the
+            Global College of Science and Technology. My hobbies are coding and reading, and I am also a Tech
+            Enthusiast.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+  <!-- Projects Page -->
+
+  <section id="projects">
+    <p class="section__text__p1">Browse My Recent</p>
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container">
+      <div class="about-containers">
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-1.png" alt="Project 1" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Digital Clock</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/argha247'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/argha247'">
+              Checkout
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-2.png" alt="Project 2" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Calculator</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/argha247'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/argha247'">
+              Checkout
+            </button>
+          </div>
+        </div>
+        <div class="details-container color-container">
+          <div class="article-container">
+            <img src="./assets/project-3.png" alt="Project 3" class="project-img" />
+          </div>
+          <h2 class="experience-sub-title project-title">Pomodoro Timer</h2>
+          <div class="btn-container">
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/argha247'">
+              Github
+            </button>
+            <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/argha247'">
+              Checkout
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <!-- Contact Page -->
+
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:arghamandal247@gmail.com">arghamandal247@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon" />
+        <p><a href="https://www.linkedin.com/in/argha247">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <p>Copyright &#169; 2024 Argha Mandal. All Rights Reserved.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>
